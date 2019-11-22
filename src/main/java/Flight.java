@@ -30,7 +30,7 @@ public class Flight {
     }
 
     public void addPassenger(Passenger passenger) {
-        if (this.passengers.size() < plane.getCapacity())
+        if(checkForSeat())
         this.passengers.add(passenger);
     }
 
